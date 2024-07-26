@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TranquilTravels</string>
+
+
+
+    <string name="slide_1_title">Find Tranquility Within!</string>
+    <string name="slide_1_desc">Discover Mindfulness through Calming Meditation Elements</string>
+
+    <string name="slide_2_title">Journey to Inner Peace!</string>
+    <string name="slide_2_desc">Discover Serenity While You Travel with TranquilTravels</string>
+
+    <string name="slide_3_title">Explore the World with Tranquility!</string>
+    <string name="slide_3_desc">Embark on a Serene Journey Across the Globe</string>
+
+
+    <string name="already_account">Already have an account? <font color="#6A8303">Log In</font></string>
+
+</resources>

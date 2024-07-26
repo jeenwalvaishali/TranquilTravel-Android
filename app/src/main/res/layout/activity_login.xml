@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/firasans_medium"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="32dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back you've been missed at TranquilTravels!"
+            android:textColor="@color/black"
+            android:fontFamily="@font/firasans_regular"
+            android:textSize="24sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center" />
+
+        <!-- Username Input -->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/firasans_regular"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:text="Email"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_marginTop="16dp" />-->
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/place_holder"
+            android:textColor="@color/black"
+            android:fontFamily="@font/firasans_regular"
+            android:hint="Enter email"
+            android:background="@drawable/rounded_edit_text" />
+
+        <!-- Password Input -->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:fontFamily="@font/firasans_regular"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Password"-->
+<!--            android:textColor="@color/black" />-->
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/place_holder"
+            android:textColor="@color/black"
+            android:fontFamily="@font/firasans_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edit_text" />
+
+        <!-- Remember Me and Forgot Password -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/rememberMeCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black"
+                android:fontFamily="@font/firasans_regular"
+                android:text="Remember Me" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Forgot Password?"
+                android:textColor="@color/black"
+                android:textAlignment="viewEnd"
+                android:fontFamily="@font/firasans_regular"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp" />
+        </RelativeLayout>
+
+        <!-- Login Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:fontFamily="@font/firasans_bold"
+            android:textAllCaps="false"
+            android:text="Log In"
+            android:textSize="18sp"
+            android:background="@drawable/button_gradient"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"  />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Social Login Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or continue with:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/firasans_regular"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Social Login Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/googleButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/google_icon"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/facebookButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/facebook_icon"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/twitterButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/twitter_icon"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <!-- Create Account Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createAccountButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Create an Account"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_button_border" />
+
+        <!-- Terms and Privacy Policy -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans_regular"
+            android:textColor="@color/black"
+            android:text="By signing up you agree to our "
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans_regular"
+            android:textSize="16sp"
+            android:text="Terms &amp; Privacy Policy."
+            android:textColor="@color/link_color"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</ScrollView>

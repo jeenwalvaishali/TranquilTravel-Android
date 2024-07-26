@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:fontFamily="@font/firasans_medium"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_marginTop="32dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create your account to access TranquilTravels!"
+                android:textColor="@color/black"
+                android:fontFamily="@font/firasans_regular"
+                android:textSize="24sp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+
+            <!-- Username Input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/firasans_regular"
+                android:paddingBottom="5dp"
+                android:text="Username"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColorHint="@color/place_holder"
+                android:textColor="@color/black"
+                android:fontFamily="@font/firasans_regular"
+                android:hint="Enter username"
+                android:background="@drawable/rounded_edit_text" />
+
+            <!-- Email Input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/firasans_regular"
+                android:paddingBottom="5dp"
+                android:textSize="15sp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColorHint="@color/place_holder"
+                android:textColor="@color/black"
+                android:hint="Enter email"
+                android:background="@drawable/rounded_edit_text" />
+
+            <!-- Password Input -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/firasans_regular"
+                android:paddingBottom="5dp"
+                android:textSize="15sp"
+                android:text="Password"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:layout_marginBottom="15dp"
+                android:textColorHint="@color/place_holder"
+                android:textColor="@color/black"
+                android:fontFamily="@font/firasans_regular"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@drawable/rounded_edit_text" />
+
+        <!-- Confirm Password Input -->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Confirm Password"-->
+<!--            android:layout_marginTop="16dp" />-->
+<!--        <EditText-->
+<!--            android:id="@+id/confirmPasswordEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10dp"-->
+<!--            android:hint="Enter your password again"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:background="@drawable/rounded_edit_text" />-->
+
+            <!-- Create Account Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/createAccountButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:fontFamily="@font/firasans_bold"
+                android:textAllCaps="false"
+                android:text="Create an Account"
+                android:textSize="18sp"
+                android:background="@drawable/button_gradient"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/already_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/firasans_regular"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="@string/already_account"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal" />
+
+            <!-- Terms and Privacy Policy -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/firasans_regular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="By creating an account you agree to our "
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/firasans_regular"
+                android:textSize="16sp"
+                android:text="Terms &amp; Privacy Policy."
+                android:textColor="@color/link_color"
+                android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>

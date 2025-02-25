@@ -88,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     runOnUiThread(() -> Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show());
                     // Handle successful login, e.g., start a new activity
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, ChooseMoodActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
